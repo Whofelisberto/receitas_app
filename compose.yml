@@ -1,12 +1,12 @@
 services:
   db:
     image: postgres:latest
-    container_name: receitasfit_db
+    container_name: receitasfitness_db
     restart: always
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: receitasfit
+      POSTGRES_DB: receitasfitness
     ports:
       - "3360:5432"
     volumes:
