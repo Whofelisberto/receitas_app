@@ -3,7 +3,7 @@ package main
 import (
 
 	"github.com/gofiber/fiber/v2"
-	"receitasfit/backend/config"
+	"receitasfitness/backend/config"
 	"receitasfitness/backend/models"
 	"receitasfitness/backend/routes"
 	"fmt"
