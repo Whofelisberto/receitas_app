@@ -15,7 +15,8 @@ var DB * gorm.DB
 
 func ConnectDatabase() {
 	dsn := "host=localhost user=admin password=admin dbname=receitasfitness port=3360 sslmode=disable"
-	DB , err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	var err error
+	DB , err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("falha para se conectar ao banco de dados")
 	}

@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-var secret = []byte(os.Getenv("JWT_SECRET"))
+var Secret = []byte(os.Getenv("JWT_SECRET"))
 
 // GenerateToken Gera um token JWT para o usuário fornecido
 func GenerateToken(userID uint, role string) (string, error) {
@@ -19,9 +19,5 @@ func GenerateToken(userID uint, role string) (string, error) {
 	}
 
  token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
-	return token.SignedString(secret)
-}
-
-func GetSecret() []byte{
-	return secret
+	return token.SignedString(Secret)
 }

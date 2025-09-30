@@ -1,16 +1,19 @@
-//Package routes Rotas da aplicação
+// Package routes Rotas da aplicação
 package routes
 
 import (
+	"receitasfitness/backend/controllers"
+	"receitasfitness/backend/middlewares"
+
 	"github.com/gofiber/fiber/v2"
-	//"receitasfit/backend/controllers"
-	)
+)
 
 	func Setup(app *fiber.App) {
-		app.Post("/registrar")
-		app.Post("/login" )
-		app.Get("/usuarios" ) // Rota protegida, apenas para admins
-		app.Get("/usuarios/:id" )
-		app.Post("/receitas" )
-		app.Get("/receitas/:id" )
+		app.Post("/registrar", controllers.Register)
+		app.Post("/login", controllers.Login)
+		app.Post("/receitas",middlewares.JWTProtected(), controllers.CreateReceita )
+
+		app.Get("/users", controllers.GetAllUsers)
+		app.Get("/users/:id", controllers.GetUserByID)
+		app.Get("/receitas", controllers.ListaReceitas )
 	}

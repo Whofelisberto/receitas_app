@@ -3,8 +3,8 @@ package models
 
 type User struct {
 	ID       uint   `gorm:"primaryKey" json:"id"`
-	Username string `gorm:"" json:"username"`
+	Username string `json:"username"`
 	Email    string `gorm:"unique" json:"email"`
-	Password string `json:"-"`
+	Password string `json:"password"`
 	Role		 string `json:"role"` //  "admin" ou "user"
 }
