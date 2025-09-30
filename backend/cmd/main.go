@@ -3,9 +3,9 @@ package main
 import (
 
 	"github.com/gofiber/fiber/v2"
-	"receitasfitness/backend/config"
-	"receitasfitness/backend/models"
-	"receitasfitness/backend/routes"
+	"receitas_app/backend/config"
+	"receitas_app/backend/models"
+	"receitas_app/backend/routes"
 	"fmt"
 	"log"
 )
