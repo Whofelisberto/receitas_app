@@ -1,7 +1,7 @@
 // Package middlewares provê middleware de autenticação JWT.
 package middlewares
 import (
-    "receitasfitness/backend/utils"
+    "receitas_app/backend/utils"
     "github.com/gofiber/fiber/v2"
     "github.com/golang-jwt/jwt/v5"
 )
