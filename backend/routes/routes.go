@@ -2,8 +2,8 @@
 package routes
 
 import (
-	"receitasfitness/backend/controllers"
-	"receitasfitness/backend/middlewares"
+	"receitas_app/backend/controllers"
+	"receitas_app/backend/middlewares"
 
 	"github.com/gofiber/fiber/v2"
 )
