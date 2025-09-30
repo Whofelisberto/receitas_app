@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"receitasfitness/backend/models"
+	"receitas_app/backend/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
