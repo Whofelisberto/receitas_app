@@ -1,6 +1,7 @@
 //Package models Estrutura do banco de dados para usuários
 package models
 
+
 type User struct {
 	ID       uint   `gorm:"primaryKey" json:"id"`
 	Username string `json:"username"`
