@@ -4,9 +4,9 @@ package controllers
 import (
 	"errors"
 	"log"
-	"receitasfitness/backend/config"
-	"receitasfitness/backend/models"
-	"receitasfitness/backend/utils"
+	"receitas_app/backend/config"
+	"receitas_app/backend/models"
+	"receitas_app/backend/utils"
 
 	"github.com/gofiber/fiber/v2"
 	"gorm.io/gorm"

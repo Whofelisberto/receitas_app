@@ -2,8 +2,8 @@
 package controllers
 
 import (
-	"receitasfitness/backend/config"
-	"receitasfitness/backend/models"
+	"receitas_app/backend/config"
+	"receitas_app/backend/models"
 	"github.com/golang-jwt/jwt/v5"
 
 	"github.com/gofiber/fiber/v2"
